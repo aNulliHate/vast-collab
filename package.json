@@ -1,10 +1,26 @@
 {
   "name": "vast-vue-admin",
   "version": "0.1.0",
-  "private": true,
+  "description": "A Open Source project collaboration system",
+  "author": "aNulliHate <lclarkdwain@outlook.com>",
+  "keywords": [
+    "vue",
+    "project-management",
+    "collaboration",
+    "dashboard",
+    "boilerplate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aNulliHate/vast-collab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aNulliHate/vast-collab/issues"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:stage": "vue-cli-service build --mode staging",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"

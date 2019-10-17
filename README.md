@@ -1,34 +1,28 @@
-# vast-vue-admin
+# Vast Collab
 
-## Project setup
-```
-yarn install
-```
+A Open Source project collaboration system
 
-### Compiles and hot-reloads for development
-```
+## Table of Contents
+
+- [Installation](#installation)
+- [Support](#support)
+- [Contributing](#contributing)
+
+## Installation
+
+Download to your project directory, add `README.md`, and commit:
+
+```sh
+git clone https://github.com/aNulliHate/vast-collab.git
+cd vast-collab
+yarn
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## Support
 
-### Run your unit tests
-```
-yarn test:unit
-```
+Please [open an issue](https://github.com/aNulliHate/vast-collab/issues/new) for support.
 
-### Run your end-to-end tests
-```
-yarn test:e2e
-```
+## Contributing
 
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Create a branch, add commits, and [open a pull request](https://github.com/aNulliHate/vast-collab/compare/).
