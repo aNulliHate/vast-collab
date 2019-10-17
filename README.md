@@ -10,8 +10,6 @@ A Open Source project collaboration system
 
 ## Installation
 
-Download to your project directory, add `README.md`, and commit:
-
 ```sh
 git clone https://github.com/aNulliHate/vast-collab.git
 cd vast-collab
