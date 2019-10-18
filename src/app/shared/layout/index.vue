@@ -1,16 +1,17 @@
 <template>
-    <div id="app">
+    <div class="app">
+        <layout-header fixed></layout-header>
         <div class="app-body">
-            <sidebar fixed>
+            <layout-sidebar fixed>
                 <sidebar-header />
                 <sidebar-form />
                 <sidebar-nav :nav-items="nav" />
                 <sidebar-footer />
                 <sidebar-minimizer />
-            </sidebar>
+            </layout-sidebar>
             <main class="main">
                 <div class="container-fluid">
-                    <router-view />
+                    <router-view></router-view>
                 </div>
             </main>
         </div>
@@ -18,16 +19,18 @@
 </template>
 
 <script>
-import Sidebar from './components/Sidebar'
-import SidebarFooter from './components/Sidebar/SidebarFooter'
-import SidebarForm from './components/Sidebar/SidebarForm'
-import SidebarHeader from './components/Sidebar/SidebarHeader'
-import SidebarMinimizer from './components/Sidebar/SidebarMinimizer'
-import SidebarNav from "./components/Sidebar/SidebarNav/index";
+import LayoutHeader from './components/LayoutHeader'
+import LayoutSidebar from './components/LayoutSidebar'
+import SidebarFooter from './components/LayoutSidebar/SidebarFooter'
+import SidebarForm from './components/LayoutSidebar/SidebarForm'
+import SidebarHeader from './components/LayoutSidebar/SidebarHeader'
+import SidebarMinimizer from './components/LayoutSidebar/SidebarMinimizer'
+import SidebarNav from "./components/LayoutSidebar/SidebarNav/index";
 export default {
     name: 'Layout',
     components: {
-        Sidebar,
+        LayoutHeader,
+        LayoutSidebar,
         SidebarFooter,
         SidebarForm,
         SidebarHeader,

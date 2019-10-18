@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const Layout = () => import('../shared/layout')
+const Layout = () => import('@/app/shared/layout')
 
 Vue.use(Router)
 
-const routes = [
+export const constantRoutes = [
     {
         path: '/',
         redirect: '/dashboard',
@@ -21,10 +21,14 @@ const routes = [
     },
 ]
 
-export default new Router({
-    mode: 'hash',
+const createRouter = () => new Router({
+    // mode: 'history',
     // base: process.env.BASE_URL,
     linkActiveClass: 'open active',
     scrollBehavior: () => ({ y: 0 }),
-    routes: routes
+    routes: constantRoutes
 })
+
+const router = createRouter()
+
+export default router

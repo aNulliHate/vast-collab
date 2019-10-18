@@ -9,7 +9,7 @@ import { mixin as clickaway } from 'vue-clickaway'
 import { hideMobile } from "@/app/shared/mixins/hideMobile"
 
 export default {
-    name: 'sidebar',
+    name: 'layout-sidebar',
     mixins: [ clickaway, hideMobile ],
     props: {
         fixed: {

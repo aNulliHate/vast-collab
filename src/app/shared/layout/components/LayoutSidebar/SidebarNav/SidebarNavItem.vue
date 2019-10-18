@@ -1,12 +1,14 @@
 <template>
-    <li :class="classList">
+    <li :class="classList" @click="hideMobile">
         <slot></slot>
     </li>
 </template>
 
 <script>
+import { hideMobile } from '@/app/shared/mixins/hideMobile'
 export default {
     name: 'sidebar-nav-item',
+    mixins: [ hideMobile ],
     props: {
         classes: {
             type: [String, Array, Object],
@@ -17,7 +19,7 @@ export default {
         classList() {
             return [
                 'nav-item',
-                ...this.itemClasses()
+                ...this.itemClasses
             ]
         },
         itemClasses () {
